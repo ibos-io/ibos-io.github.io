@@ -1,11 +1,8 @@
-<?php
-// footer.php
-?>
 </main>
 <footer>
-    <div class="container footer-content">
-        <p>9th Floor, Ali Bhaban, 92 Kazi Nazrul Islam Ave, Dhaka 1215, Bangladesh</p>
-        <p>&copy; 2024 Dhaka Consulting. All rights reserved.</p>
+    <div class="container">
+        <p>&copy; 2024 ZUNOKS Consulting. All Rights Reserved.</p>
+        <p>C1, Level 3 House, Unit, 35/B Road 63, Dhaka 1212, Bangladesh</p>
     </div>
 </footer>
 </body>
