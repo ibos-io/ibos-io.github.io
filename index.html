@@ -1,286 +1,180 @@
-Certainly! Here's a **professional website structure** with **HTML, CSS, PHP, and dynamic UI/UX components** for **ZUNOKS Consulting**. It includes sections for:
-
-- Business Header
-- Services Section
-- Contact Section
-- Responsive Layout
-- Dynamic Header/Footer using PHP
-- Contact Form (PHP-enabled)
-
----
-
-### 📁 Directory Structure
-```
-/zunoks-consulting/
-│
-├── index.php
-├── header.php
-├── footer.php
-├── contact.php
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
-└── images/
-    └── logo.png
-```
-
----
-
-### ✅ `header.php`
-```php
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZUNOKS Consulting</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhaka Consulting | Income Tax | VAT | Company Formation | Business Consultancy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #0c4a6e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header p {
+      margin: 5px 0 0;
+    }
+    nav {
+      background-color: #003f5c;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #2f4f4f;
+    }
+    .hero {
+      background-color: #e0f7fa;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h2 {
+      margin: 0 0 20px;
+      font-size: 32px;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+    .section:nth-child(even) {
+      background-color: #f0f0f0;
+    }
+    .section h3 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .service {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      margin: 10px;
+      padding: 20px;
+      flex: 1 1 250px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      transition: box-shadow 0.3s ease;
+    }
+    .service:hover {
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .service h4 {
+      margin-top: 0;
+      color: #0c4a6e;
+    }
+    .contact {
+      padding: 40px 20px;
+      background-color: #e0f2f1;
+      text-align: center;
+    }
+    .contact h3 {
+      margin-bottom: 20px;
+    }
+    .contact p {
+      margin: 10px 0;
+    }
+    footer {
+      background-color: #003f5c;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      nav a { float: none; width: 100%; }
+      .services { flex-direction: column; }
+    }
+  </style>
 </head>
 <body>
-<header>
-    <div class="container">
-        <h1>ZUNOKS Consulting</h1>
-        <nav>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="contact.php">Contact</a></li>
-            </ul>
-        </nav>
+  <header>
+    <h1>Dhaka Consulting</h1>
+    <p>Income Tax | VAT | Company Formation | Business Consultancy</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="hero">
+    <h2>Your Trusted Business Partner in Bangladesh</h2>
+    <p>Providing expert consultancy in income tax, VAT, business formation and regulatory compliance with integrity and professionalism.</p>
+  </div>
+  <section id="about" class="section">
+    <h3>About Us</h3>
+    <p>Dhaka Consulting brings years of industry experience helping individuals and businesses manage tax, VAT, and corporate affairs smoothly. Located in the heart of Dhaka, we are committed to excellence, accuracy, and client success.</p>
+  </section>
+  <section id="services" class="section">
+    <h3>Our Services</h3>
+    <div class="services">
+      <div class="service">
+        <h4>Income Tax Filing</h4>
+        <p>Expert assistance in accurate and timely income tax filing for individuals and corporations.</p>
+      </div>
+      <div class="service">
+        <h4>VAT Compliance</h4>
+        <p>Complete VAT registration, return filing, and advisory services aligned with government regulations.</p>
+      </div>
+      <div class="service">
+        <h4>Company Formation</h4>
+        <p>End-to-end services for registering private limited companies, trade licenses, and legal setups in Bangladesh.</p>
+      </div>
+      <div class="service">
+        <h4>Business Consultancy</h4>
+        <p>Strategic advice on business planning, regulatory compliance, and operational growth in the local market.</p>
+      </div>
     </div>
-</header>
-```
-
----
-
-### ✅ `footer.php`
-```php
-<footer>
-    <div class="container">
-        <p>&copy; <?php echo date("Y"); ?> ZUNOKS Consulting. All rights reserved.</p>
-    </div>
-</footer>
-<script src="js/main.js"></script>
+  </section>
+  <section id="contact" class="contact">
+    <h3>Contact Us</h3>
+    <p><strong>Address:</strong> 9th Floor, Ali Bhaban, 92 Kazi Nazrul Islam Ave, Dhaka 1215, Bangladesh</p>
+    <p><strong>Email:</strong> info@dhakaconsulting.com</p>
+    <p><strong>Phone:</strong> +880 1234 567890</p>
+  </section>
+  <footer>
+    &copy; 2026 Dhaka Consulting. All rights reserved.
+  </footer>
+  <script>
+    // Simple smooth scroll behavior for anchor links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 60,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
-```
-
----
-
-### ✅ `index.php` (Home Page)
-```php
-<?php include('header.php'); ?>
-
-<section class="hero">
-    <div class="container">
-        <h2>Your Strategic Business Partner in Bangladesh</h2>
-        <p>Empowering enterprises with cutting-edge solutions and expert consultancy.</p>
-    </div>
-</section>
-
-<section id="services" class="services">
-    <div class="container">
-        <h2>Our Services</h2>
-        <div class="service-boxes">
-            <div class="service">
-                <h3>Business Strategy Consulting</h3>
-                <p>Helping businesses grow through insightful strategy development.</p>
-            </div>
-            <div class="service">
-                <h3>Financial Advisory</h3>
-                <p>Financial planning and advisory to maximize profitability.</p>
-            </div>
-            <div class="service">
-                <h3>Market Research & Analysis</h3>
-                <p>Empirical research to help position your brand for success.</p>
-            </div>
-            <div class="service">
-                <h3>Technology Integration</h3>
-                <p>Leverage technology to streamline your operations and marketing.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<?php include('footer.php'); ?>
-```
-
----
-
-### ✅ `contact.php`
-```php
-<?php include('header.php'); ?>
-
-<section class="contact">
-    <div class="container">
-        <h2>Contact Us</h2>
-        <div class="contact-info">
-            <p><strong>Address:</strong> C1, Level 3 House, Unit, 35/B Road 63, Dhaka 1212, Bangladesh</p>
-            <p><strong>Phone:</strong> +8801X-XXXXXXX</p>
-            <p><strong>Email:</strong> info@zunoks.com</p>
-            <p><strong>Website:</strong> www.zunoks.com</p>
-        </div>
-
-        <form action="contact.php" method="post" class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" name="submit">Send Message</button>
-        </form>
-    </div>
-</section>
-
-<?php
-if (isset($_POST['submit'])) {
-    $to = "info@zunoks.com";
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
-    $subject = "ZUNOKS Contact Inquiry from $name";
-
-    $headers = "From: $email\r\n".
-               "Reply-To: $email\r\n".
-               "Content-Type: text/plain";
-
-    if (mail($to, $subject, $message, $headers)) {
-        echo "<p class='success'>Thank you! Your message has been sent.</p>";
-    } else {
-        echo "<p class='error'>There was an error sending your message.</p>";
-    }
-}
-?>
-
-<?php include('footer.php'); ?>
-```
-
----
-
-### ✅ `style.css` (Basic Responsive UI/UX)
-```css
-/* General styles */
-body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-header {
-    background-color: #003366;
-    color: white;
-    padding: 20px 0;
-}
-
-header h1 {
-    margin: 0;
-    padding: 0;
-}
-
-nav ul {
-    list-style: none;
-    text-align: right;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.hero {
-    background-color: #f2f2f2;
-    padding: 80px 0;
-    text-align: center;
-}
-
-.services, .contact {
-    padding: 60px 20px;
-    background-color: #ffffff;
-}
-
-.service-boxes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-
-.service {
-    background: #e6f2ff;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.contact-info {
-    margin-bottom: 30px;
-}
-
-.contact-form {
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form input, .contact-form textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.contact-form button {
-    background-color: #003366;
-    color: white;
-    border: none;
-    padding: 12px;
-    cursor: pointer;
-}
-
-.success { color: green; }
-.error { color: red; }
-
-footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-```
-
----
-
-### ✅ `main.js` (Optional JS File)
-```javascript
-// Custom JavaScript here (animations, form validation, etc.)
-console.log("ZUNOKS Consulting website loaded.");
-```
-
----
-
-### 🟢 Features Summary
-| Feature           | Description |
-|------------------|-------------|
-| **Modular PHP**         | `header.php` and `footer.php` for easy content updates. |
-| **Responsive CSS**      | Flexbox and Grid for responsiveness on all devices. |
-| **Contact Form**        | PHP-enabled form that emails the business (+ feedback messages). |
-| **Elegant UX**          | Clean, professional layout, simple colors, easy navigation. |
-
----
-
-### 🔗 Deployment Recommendation
-Upload to a server with **PHP & Mail** support (like cPanel hosting), configure domain (`zunoks.com`), and ensure the contact email is set correctly.
-
----
-
-Would you like:
-- **Database integration (soon-to-come services, blog, admin signin)?**
-- **SEO meta tags & social previews?**
-- **Multilingual/Bangla version?**
-
-Let me know if you want any enhancements!
