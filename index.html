@@ -2,133 +2,151 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dhaka Consulting | Income Tax | VAT | Company Formation | Business Consultancy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZUNOKS Consulting</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f5f5f5;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
       color: #333;
     }
     header {
-      background: #0275d8;
+      background-color: #004080;
       color: white;
       padding: 20px 0;
       text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 26px;
     }
     nav {
-      background: #025aa5;
-      text-align: center;
-      padding: 10px 0;
+      background-color: #003366;
+      overflow: hidden;
     }
     nav a {
+      float: left;
+      display: block;
       color: white;
+      padding: 14px 20px;
       text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
     }
     nav a:hover {
-      text-decoration: underline;
+      background-color: #002244;
     }
-    main {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-      background: white;
+    .hero {
+      background-color: #e6f0ff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 48px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #555;
     }
     .section {
-      margin-bottom: 40px;
+      padding: 40px 20px;
+      text-align: center;
     }
     .section h2 {
-      color: #0275d8;
+      font-size: 32px;
+      margin-bottom: 20px;
     }
-    footer {
-      background: #333;
-      color: #ccc;
-      text-align: center;
-      padding: 20px 0;
+    .section p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
     }
     .contact {
-      background: #f0f0f0;
-      padding: 20px;
-      border-radius: 5px;
+      background-color: #f0f8ff;
+      padding: 40px 20px;
     }
-    input, textarea {
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    form input, form textarea {
       width: 100%;
       padding: 10px;
-      margin-top: 10px;
       margin-bottom: 20px;
       border: 1px solid #ccc;
-      border-radius: 3px;
+      border-radius: 4px;
     }
-    button {
-      background: #0275d8;
+    form button {
+      background-color: #004080;
       color: white;
-      padding: 10px 15px;
+      padding: 12px 24px;
       border: none;
-      border-radius: 3px;
+      border-radius: 4px;
       cursor: pointer;
     }
-    button:hover {
-      background: #025aa5;
+    form button:hover {
+      background-color: #003366;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Dhaka Consulting | Income Tax | VAT | Company Formation | Business Consultancy</h1>
+    <h1>ZUNOKS Consulting</h1>
+    <p>Your Trusted Partner in Business Strategy & Solutions</p>
   </header>
   <nav>
+    <a href="#about">About</a>
     <a href="#services">Services</a>
-    <a href="#about">About Us</a>
     <a href="#contact">Contact</a>
   </nav>
-  <main>
-    <section id="services" class="section">
-      <h2>Our Services</h2>
-      <ul>
-        <li><strong>Income Tax Services:</strong> Accurate, compliant tax filing for individuals and businesses.</li>
-        <li><strong>VAT Consultancy:</strong> Expert help with VAT registration, filing, and compliance.</li>
-        <li><strong>Company Formation:</strong> Seamless setup of business entities in Bangladesh.</li>
-        <li><strong>Business Consultancy:</strong> Strategic insights and guidance to help your business grow.</li>
-      </ul>
-    </section>
-    <section id="about" class="section">
-      <h2>About Dhaka Consulting</h2>
-      <p>Located at the heart of Dhaka, Dhaka Consulting is your trusted partner for professional tax, VAT, and business consultancy services. With years of industry experience, our experts provide personalized solutions that drive success and compliance.</p>
-      <p>Address: 9th Floor, Ali Bhaban, 92 Kazi Nazrul Islam Ave, Dhaka 1215, Bangladesh</p>
-    </section>
-    <section id="contact" class="section">
-      <h2>Contact Us</h2>
-      <div class="contact">
-        <form id="contactForm" onsubmit="submitForm(event)">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-        <p id="formMessage" style="color: green;"></p>
-      </div>
-    </section>
-  </main>
+  <div class="hero">
+    <h1>Empowering Your Business</h1>
+    <p>Strategic insights, innovative solutions, and expert guidance to unlock growth.</p>
+  </div>
+  <div class="section" id="about">
+    <h2>About Us</h2>
+    <p>ZUNOKS Consulting is a Bangladesh-based consultancy firm dedicated to delivering smart, tailored business solutions for clients across industries. Our mission is to empower organizations by providing strategic insights, operational support, and technology-driven approaches that solve complex challenges and drive scalable success.</p>
+  </div>
+  <div class="section" id="services">
+    <h2>Our Services</h2>
+    <p>We offer a wide range of consulting services including strategic planning, business process optimization, market analysis, digital transformation, and project management. Our team of experts works closely with clients to understand their unique goals and deliver solutions that maximize value and results.</p>
+  </div>
+  <div class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Reach out to us using the form below or visit our office.</p>
+    <p><strong>Address:</strong> C1, Level 3 House, Unit, 35/B Road 63, Dhaka 1212, Bangladesh</p>
+    <form onsubmit="submitForm(event)">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
   <footer>
-    <p>&copy; 2026 Dhaka Consulting. All rights reserved.</p>
-    <p>9th Floor, Ali Bhaban, 92 Kazi Nazrul Islam Ave, Dhaka 1215, Bangladesh</p>
+    &copy; 2026 ZUNOKS Consulting. All rights reserved.
   </footer>
   <script>
     function submitForm(event) {
       event.preventDefault();
-      document.getElementById('formMessage').innerText = "Thank you for your message. We'll get back to you soon.";
-      document.getElementById('contactForm').reset();
+      alert("Thank you for reaching out! We'll get back to you soon.");
+      document.querySelector('form').reset();
     }
   </script>
 </body>
