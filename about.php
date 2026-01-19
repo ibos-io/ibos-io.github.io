@@ -1,14 +1,14 @@
 <?php include 'header.php'; ?>
-<section class="about container">
-    <h1>About Dhaka Consulting</h1>
-    <p>Dhaka Consulting is a leading business consultancy based in Dhaka, Bangladesh, dedicated to providing superior financial, tax, and company formation services. Our mission is to empower businesses with expert guidance and seamless compliance solutions.</p>
-    <p>With a team of experienced professionals, we ensure our clients get accurate advice tailored to their unique business needs, helping them to focus on growth and success.</p>
-    <h2>Our Values</h2>
-    <ul>
-        <li><strong>Integrity:</strong> We operate with the highest level of honesty and transparency.</li>
-        <li><strong>Expertise:</strong> Our consultants are highly knowledgeable and continuously update their skills.</li>
-        <li><strong>Client Focus:</strong> We prioritize your business goals and tailor our solutions accordingly.</li>
-        <li><strong>Commitment:</strong> Dedicated to timely and reliable service delivery.</li>
-    </ul>
+<section class="about-us">
+    <div class="container">
+        <h1>About ZUNOKS Consulting</h1>
+        <p>At ZUNOKS Consulting, we specialize in delivering expert consulting services that empower businesses to achieve their full potential. Based in Dhaka, Bangladesh, our team is committed to providing personalized guidance and innovative solutions tailored to your unique challenges.</p>
+        <h2>Our Mission</h2>
+        <p>To drive sustainable business success through strategic consulting, fostering growth, innovation, and operational excellence.</p>
+        <h2>Our Vision</h2>
+        <p>To be recognized as Bangladesh’s leading consulting firm that transforms businesses and shapes industries.</p>
+        <h2>Our Team</h2>
+        <p>Comprised of experienced professionals with diverse industry backgrounds, we ensure the delivery of high-impact results for our clients.</p>
+    </div>
 </section>
 <?php include 'footer.php'; ?>
