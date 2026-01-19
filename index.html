@@ -3,78 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhaka Consulting | Income Tax | VAT | Company Formation | Business Consultancy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>ZUNOKS Consulting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* Reset and base */
+        /* Reset & Base */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Inter', sans-serif;
             line-height: 1.6;
-            background: #f9f9f9;
+            background: #f5f7fa;
             color: #333;
         }
         a {
-            color: #007bff;
             text-decoration: none;
+            color: inherit;
         }
-        a:hover {
-            text-decoration: underline;
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 15px;
         }
+        /* Header */
         header {
-            background: #004085;
-            color: #fff;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
+            background: #0d6efd;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        header .logo {
-            font-size: 1.5rem;
+        .logo {
             font-weight: 700;
+            font-size: 1.5rem;
             letter-spacing: 1px;
         }
         nav {
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style: none;
             display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
+            gap: 25px;
+            font-weight: 600;
         }
-        nav a {
-            color: #ffffff;
-            font-weight: 500;
-            padding: 0.5rem;
-            transition: background-color 0.3s ease;
-            border-radius: 5px;
+        nav ul li {
+
         }
-        nav a:hover, nav a.active {
-            background-color: #0056b3;
+        nav ul li a {
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background 0.3s ease;
         }
+        nav ul li a:hover,
+        nav ul li a.active {
+            background: #0b5ed7;
+        }
+        /* Responsive Nav */
         @media (max-width: 600px) {
-            header {
+            nav ul {
                 flex-direction: column;
-                align-items: flex-start;
-            }
-            nav {
-                width: 100%;
-                justify-content: center;
+                gap: 10px;
             }
         }
     </style>
 </head>
 <body>
 <header>
-    <div class="logo">Dhaka Consulting</div>
-    <nav>
-        <a href="index.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?>">Home</a>
-        <a href="about.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'about.php' ? 'active' : ''; ?>">About</a>
-        <a href="services.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'services.php' ? 'active' : ''; ?>">Services</a>
-        <a href="contact.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'active' : ''; ?>">Contact</a>
-    </nav>
+    <div class="container">
+        <div class="logo">ZUNOKS Consulting</div>
+        <nav>
+            <ul>
+                <li><a href="index.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : '';?>">Home</a></li>
+                <li><a href="about.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'about.php' ? 'active' : '';?>">About</a></li>
+                <li><a href="services.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'services.php' ? 'active' : '';?>">Services</a></li>
+                <li><a href="contact.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'active' : '';?>">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <main>
-<!-- Page content starts -->
+<div class="container" style="padding: 30px 0;">
