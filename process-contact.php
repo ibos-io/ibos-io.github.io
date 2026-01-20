@@ -1,33 +1,29 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $name = strip_tags(trim($_POST["name"] ?? ""));
-    $email = filter_var(trim($_POST["email"] ?? ""), FILTER_SANITIZE_EMAIL);
-    $subject = strip_tags(trim($_POST["subject"] ?? ""));
-    $message = strip_tags(trim($_POST["message"] ?? ""));
+    $name = strip_tags(trim($_POST["name"]));
+    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $phone = strip_tags(trim($_POST["phone"]));
+    $message = trim($_POST["message"]);
 
-    if (empty($name) || empty($email) || empty($subject) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: contact.php?error=1");
+    if (empty($name) || empty($email) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        header("Location: contact.php?error=invalidinput");
         exit;
     }
 
-    $to = "info@zunoksconsulting.com"; // Replace with actual recipient email
-    $email_subject = "New Contact Message: " . $subject;
-    $email_body = "You have received a new message from the contact form on your website." . "\n\n" .
-                  "Name: $name\n" .
-                  "Email: $email\n" .
-                  "Subject: $subject\n" .
-                  "Message:\n$message";
-    
-    $headers = "From: noreply@zunoksconsulting.com\r\n" .
-               "Reply-To: $email\r\n" .
-               "X-Mailer: PHP/" . phpversion();
+    $to = "info@dhakaconsulting.com"; // Set your receiving email address here
+    $subject = "New Contact Form Submission from $name";
+    $email_content = "Name: $name\n";
+    $email_content .= "Email: $email\n";
+    $email_content .= "Phone: $phone\n";
+    $email_content .= "Message:\n$message\n";
 
-    if (mail($to, $email_subject, $email_body, $headers)) {
+    $email_headers = "From: $name <$email>";
+
+    if (mail($to, $subject, $email_content, $email_headers)) {
         header("Location: contact.php?success=1");
     } else {
-        header("Location: contact.php?error=1");
+        header("Location: contact.php?error=sendfail");
     }
-    exit;
 } else {
     header("Location: contact.php");
     exit;
