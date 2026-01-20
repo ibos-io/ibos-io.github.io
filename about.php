@@ -1,7 +1,9 @@
 <?php include 'header.php'; ?>
-<section class="page-section container">
-    <h1>About Dhaka Consulting</h1>
-    <p>Dhaka Consulting is a leading business consultancy firm based in the heart of Dhaka, Bangladesh. With years of experience in Income Tax, VAT consultation, company formation, and general business consultancy, we aim to empower businesses with the knowledge and tools necessary for their growth and compliance.</p>
-    <p>Our highly qualified consultants work closely with clients to ensure personalized service, up-to-date information, and strategic advice that addresses specific business challenges in today's rapidly changing environment.</p>
+<section class="page-header">
+    <h1>About ZUNOKS Consulting</h1>
+</section>
+<section class="about-content">
+    <p>ZUNOKS Consulting is a leading consulting firm based in Dhaka, Bangladesh. We specialize in providing bespoke business advice and strategies that foster growth and innovation.</p>
+    <p>Our team of experienced professionals is dedicated to understanding your unique challenges and delivering customized solutions that drive results.</p>
 </section>
 <?php include 'footer.php'; ?>
