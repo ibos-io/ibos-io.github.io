@@ -1,20 +1,22 @@
 <?php include 'header.php'; ?>
-<section class="page-section container">
+<section class="page-header">
     <h1>Contact Us</h1>
-    <form action="process-contact.php" method="POST" class="contact-form" novalidate>
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required placeholder="Your full name">
+</section>
+<section class="contact-section">
+    <form action="process-contact.php" method="POST" id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required placeholder="Your email address">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
 
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required>
 
         <label for="message">Message</label>
-        <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-        <button type="submit" class="btn-primary">Send Message</button>
+        <button type="submit">Send Message</button>
     </form>
 </section>
 <?php include 'footer.php'; ?>
