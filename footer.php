@@ -1,11 +1,10 @@
 </main>
 <footer>
-    <div class="container footer-container">
-        <p>© 2024 Dhaka Consulting. All rights reserved.</p>
-        <address>
-            9th Floor, Ali Bhaban, 92 Kazi Nazrul Islam Ave, Dhaka 1215, Bangladesh
-        </address>
+    <div class="container">
+        <p>&copy; 2024 ZUNOKS Consulting. All rights reserved.</p>
+        <p>C1, Level 3 House, Unit, 35/B Road 63, Dhaka 1212, Bangladesh</p>
     </div>
 </footer>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
