@@ -1,22 +1,20 @@
 <?php include 'header.php'; ?>
-<section class="contact">
-    <div class="container">
-        <h1>Contact Us</h1>
-        <form action="process-contact.php" method="POST" id="contactForm">
-            <label for="name">Name<span class="required">*</span></label>
-            <input type="text" id="name" name="name" required maxlength="100">
-            
-            <label for="email">Email<span class="required">*</span></label>
-            <input type="email" id="email" name="email" required maxlength="100">
+<section class="page-section container">
+    <h1>Contact Us</h1>
+    <form action="process-contact.php" method="POST" class="contact-form" novalidate>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your full name">
 
-            <label for="subject">Subject<span class="required">*</span></label>
-            <input type="text" id="subject" name="subject" required maxlength="150">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="Your email address">
 
-            <label for="message">Message<span class="required">*</span></label>
-            <textarea id="message" name="message" rows="6" required maxlength="1000"></textarea>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number">
 
-            <button type="submit" class="btn-primary">Send Message</button>
-        </form>
-    </div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+    </form>
 </section>
 <?php include 'footer.php'; ?>
