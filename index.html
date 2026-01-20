@@ -1,89 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZUNOKS Consulting</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        /* Reset & Base */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            background: #f5f7fa;
-            color: #333;
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-        /* Container */
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-        /* Header */
-        header {
-            background: #0d6efd;
-            color: white;
-            padding: 20px 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .logo {
-            font-weight: 700;
-            font-size: 1.5rem;
-            letter-spacing: 1px;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-            font-weight: 600;
-        }
-        nav ul li {
-
-        }
-        nav ul li a {
-            color: white;
-            padding: 8px 12px;
-            border-radius: 4px;
-            transition: background 0.3s ease;
-        }
-        nav ul li a:hover,
-        nav ul li a.active {
-            background: #0b5ed7;
-        }
-        /* Responsive Nav */
-        @media (max-width: 600px) {
-            nav ul {
-                flex-direction: column;
-                gap: 10px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhaka Consulting | Home</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-<header>
-    <div class="container">
-        <div class="logo">ZUNOKS Consulting</div>
-        <nav>
-            <ul>
-                <li><a href="index.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : '';?>">Home</a></li>
-                <li><a href="about.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'about.php' ? 'active' : '';?>">About</a></li>
-                <li><a href="services.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'services.php' ? 'active' : '';?>">Services</a></li>
-                <li><a href="contact.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'active' : '';?>">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<main>
-<div class="container" style="padding: 30px 0;">
+  <!-- Header include -->
+  <div id="header-placeholder"></div>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Dhaka Consulting</h1>
+        <p>Income Tax | VAT | Company Formation | Business Consultancy</p>
+        <a href="contact.html" class="btn primary-btn">Contact Us</a>
+      </div>
+    </section>
+
+    <section class="intro container">
+      <h2>Welcome to Dhaka Consulting</h2>
+      <p>We provide expert services in Income Tax, VAT compliance, company formation, and comprehensive business consultancy tailored to your needs in Bangladesh.</p>
+    </section>
+
+    <section class="overview container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-item">
+          <h3>Income Tax</h3>
+          <p>Accurate income tax planning and filing to ensure compliance and optimization.</p>
+        </div>
+        <div class="service-item">
+          <h3>VAT Compliance</h3>
+          <p>Expert advice and filing for VAT to keep your business running smoothly.</p>
+        </div>
+        <div class="service-item">
+          <h3>Company Formation</h3>
+          <p>Professional support for establishing your company with all regulatory requirements.</p>
+        </div>
+        <div class="service-item">
+          <h3>Business Consultancy</h3>
+          <p>Strategic consultancy to help your business grow and succeed.</p>
+        </div>
+      </div>
+      <a href="services.html" class="btn secondary-btn">Learn More</a>
+    </section>
+  </main>
+
+  <!-- Footer include -->
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
