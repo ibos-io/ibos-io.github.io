@@ -1,22 +1,50 @@
-<?php include 'header.php'; ?>
-<section class="page-header">
-    <h1>Contact Us</h1>
-</section>
-<section class="contact-section">
-    <form action="process-contact.php" method="POST" id="contactForm">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Dhaka Consulting</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Header include -->
+  <div id="header-placeholder"></div>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+  <main class="container contact-page">
+    <h1>Contact Dhaka Consulting</h1>
+    <p>We would love to hear from you. Please fill out the form below and we will get in touch soon.</p>
 
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" required>
+    <form action="process-contact.html" method="POST" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
 
-        <button type="submit">Send Message</button>
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn primary-btn">Send Message</button>
     </form>
-</section>
-<?php include 'footer.php'; ?>
+
+    <section class="contact-info">
+      <h2>Our Office</h2>
+      <address>
+        9th Floor, Ali Bhaban<br />
+        92 Kazi Nazrul Islam Ave,<br />
+        Dhaka 1215, Bangladesh
+      </address>
+      <p>Email: info@dhakaconsulting.com</p>
+      <p>Phone: +880 1234 567890</p>
+    </section>
+  </main>
+
+  <!-- Footer include -->
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
