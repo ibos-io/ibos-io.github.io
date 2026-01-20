@@ -1,21 +1,13 @@
 <?php include 'header.php'; ?>
-<section class="hero">
+<section class="hero-section">
     <div class="container">
-        <h1>Welcome to ZUNOKS Consulting</h1>
-        <p>Your trusted partner for business transformation and consultancy services.</p>
-        <a href="services.php" class="btn-primary">Explore Our Services</a>
+        <h1>Welcome to Dhaka Consulting</h1>
+        <p>Your trusted partner for Income Tax, VAT, Company Formation and Business Consultancy in Dhaka.</p>
+        <a href="services.php" class="btn-primary">Our Services</a>
     </div>
 </section>
-<section class="intro">
-    <div class="container">
-        <h2>Why Choose Us?</h2>
-        <p>ZUNOKS Consulting leverages deep industry knowledge and proven strategies to help your business grow and succeed in a competitive market.</p>
-        <ul class="features">
-            <li>Expert Consultants</li>
-            <li>Tailored Solutions</li>
-            <li>Innovative Strategies</li>
-            <li>Results-Oriented Approach</li>
-        </ul>
-    </div>
+<section class="intro-section container">
+    <h2>About Us</h2>
+    <p>At Dhaka Consulting, we provide expert guidance and comprehensive consultancy services to help your business thrive. Our team specializes in income tax, VAT, company formation, and tailored business consultancy solutions designed to meet your unique needs.</p>
 </section>
 <?php include 'footer.php'; ?>
