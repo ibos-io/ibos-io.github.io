@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhaka Consulting | Income Tax | VAT | Company Formation | Business Consultancy</title>
+    <title>ZUNOKS Consulting</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script defer src="assets/js/main.js"></script>
 </head>
 <body>
 <header>
-    <div class="container header-container">
+    <div class="container">
         <div class="logo">
-            <a href="index.php">Dhaka Consulting</a>
+            <a href="index.php">ZUNOKS Consulting</a>
         </div>
         <nav>
-            <ul class="nav-links">
+            <ul>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="services.php">Services</a></li>
                 <li><a href="contact.php">Contact</a></li>
             </ul>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
         </nav>
     </div>
 </header>
-<main>
+<main class="container">
